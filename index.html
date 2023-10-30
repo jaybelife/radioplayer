@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller="appCtrl" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=".jaybelife´s Radio Player">
+    <meta content="#9B59B6" name="theme-color">
+    <meta property="twitter:image"
+        content="https://cdn.discordapp.com/avatars/437308203185995779/23f614f1af32a50d10ca89470cc2a417.png?size=2048" />
+    <link rel="shortcut icon"
+        href="https://cdn.discordapp.com/avatars/437308203185995779/63dbcaed6c47a230ad095ad4eeb39e4f.png?size=2048&width=0&height=256"
+        type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>.jaybelife´s Radio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clock.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="fixed-header">
+        <a href="https://jaybelife.de/" draggable="false"><img
+                src="https://cdn.discordapp.com/avatars/437308203185995779/63dbcaed6c47a230ad095ad4eeb39e4f.png?size=512"
+                class="header-image" draggable="false"></a>
+        <span class="channel-name" style="color: #94a1b2">.jaybelife´s Radio Player</span>
+        <div class="clock" id="clock">
+            <div id="time"></div>
+        </div>
+    </div>
+    <div id="radio-container" draggable="false">
+    </div>
+    <br>
+    <br>
+    <sub>I am not affiliated with the radio channels listed above. This is just a fun project.</sub>
+    <div class="legal">
+        <p>
+            <script>document.write(new Date().getFullYear());</script> &copy; All Rights Reserved
+            •
+            <a class="link" onclick="openLinkInSameTab('../imprint'); return false;" draggable="false">Imprint</a>
+            •
+            <a class="link" onclick="openLinkInSameTab('../privacy-policy'); return false;" draggable="false">Privacy
+                Policy</a>
+        </p>
+    </div>
+    <br>
+    <script>
+        function openLinkInSameTab(url) {
+            window.location.href = url;
+        }
+    </script>
+    </div>
+    <script src="script.js"></script>
+    <script src="clock.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller="appCtrl" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I Love Music @ .jaybelife´s Radio Player">
+    <meta content="#9B59B6" name="theme-color">
+    <meta property="twitter:image" content="https://jaybelife.de/player/ilm/logo.png" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <title>I Love Music - Channels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <div class="fixed-header">
+        <a href="https://jaybelife.de/player" draggable="false"><img src="logo.png" class="header-image"
+                draggable="false"></a>
+        <span class="channel-name" style="color: #94a1b2">select a station</span>
+        <input type="range" min="0" max="100" value="50" class="volume-slider" id="volumeSlider">
+    </div>
+    <div id="radio-container" draggable="false">
+    </div>
+    <br>
+    <br>
+    <sub>I am not affiliated with the radio channels listed above. This is just a fun project.</sub>
+    <div class="legal">
+        <p>
+            <script>document.write(new Date().getFullYear());</script> &copy; All Rights Reserved
+            •
+            <a class="link" onclick="openLinkInSameTab('../imprint'); return false;" draggable="false">Imprint</a>
+            •
+            <a class="link" onclick="openLinkInSameTab('../privacy-policy'); return false;" draggable="false">Privacy
+                Policy</a>
+        </p>
+    </div>
+    <br>
+    <script>
+        function openLinkInSameTab(url) {
+            window.location.href = url;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
